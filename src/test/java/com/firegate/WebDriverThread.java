@@ -1,6 +1,6 @@
-package com.masteringselenium;
+package com.firegate;
 
-import com.masteringselenium.config.DriverType;
+import com.firegate.config.DriverType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -9,8 +9,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static com.masteringselenium.config.DriverType.FIREFOX;
-import static com.masteringselenium.config.DriverType.valueOf;
+import static com.firegate.config.DriverType.FIREFOX;
+import static com.firegate.config.DriverType.valueOf;
 
 public class WebDriverThread {
 

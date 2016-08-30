@@ -1,4 +1,4 @@
-package com.masteringselenium.config;
+package com.firegate.config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

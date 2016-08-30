@@ -1,4 +1,4 @@
-package com.masteringselenium;
+package com.firegate;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.masteringselenium.listeners.ScreenshotListener;
+import com.firegate.listeners.ScreenshotListener;
 import org.testng.annotations.Listeners;
 @Listeners(ScreenshotListener.class)
 

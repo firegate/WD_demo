@@ -70,7 +70,7 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>com.masteringselenium.listeners.ExtentReporterNG</value>
+                            <value>com.firegate.listeners.ExtentReporterNG</value>
                         </property>
                     </properties>
                     <parallel>methods</parallel>
