@@ -14,14 +14,13 @@ import static com.firegate.config.DriverType.valueOf;
 
 public class WebDriverThread {
 
-    private WebDriver webdriver;
-    private DriverType selectedDriverType;
-
     private final DriverType defaultDriverType = FIREFOX;
     private final String browser = System.getProperty("browser").toUpperCase();
     private final String operatingSystem = System.getProperty("os.name").toUpperCase();
     private final String systemArchitecture = System.getProperty("os.arch");
     private final boolean useRemoteWebDriver = Boolean.getBoolean("remoteDriver");
+    private WebDriver webdriver;
+    private DriverType selectedDriverType;
 
     public WebDriver getDriver() throws Exception {
         if (null == webdriver) {

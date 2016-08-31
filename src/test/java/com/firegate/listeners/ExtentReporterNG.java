@@ -2,7 +2,6 @@ package com.firegate.listeners;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
@@ -25,13 +24,11 @@ public class ExtentReporterNG implements IReporter {
 
             for (ISuiteResult r : result.values()) {
                 ITestContext context = r.getTestContext();
-
                 buildTestNodes(context.getPassedTests(), LogStatus.PASS);
                 buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
                 buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
             }
         }
-
         extent.flush();
         extent.close();
     }
@@ -42,7 +39,6 @@ public class ExtentReporterNG implements IReporter {
         if (tests.size() > 0) {
             for (ITestResult result : tests.getAllResults()) {
                 test = extent.startTest(result.getMethod().getMethodName());
-
                 test.getTest().setStartedTime(getTime(result.getStartMillis()));
                 test.getTest().setEndedTime(getTime(result.getEndMillis()));
 
