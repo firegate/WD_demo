@@ -1,6 +1,5 @@
-package com.firegate;
+package com.firegate.config;
 
-import com.firegate.config.DriverType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;

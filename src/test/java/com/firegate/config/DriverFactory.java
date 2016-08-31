@@ -1,16 +1,15 @@
-package com.firegate;
+package com.firegate.config;
 
+import com.firegate.listeners.ScreenshotListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import com.firegate.listeners.ScreenshotListener;
-import org.testng.annotations.Listeners;
 @Listeners(ScreenshotListener.class)
 
 public class DriverFactory {

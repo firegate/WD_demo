@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import static com.firegate.DriverFactory.getDriver;
+import static com.firegate.config.DriverFactory.getDriver;
 
 
 public class ScreenshotListener extends TestListenerAdapter {
