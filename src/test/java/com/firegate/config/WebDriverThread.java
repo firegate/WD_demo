@@ -51,9 +51,9 @@ public class WebDriverThread {
 
     private void instantiateWebDriver(DesiredCapabilities desiredCapabilities) throws MalformedURLException {
         System.out.println(" ");
-        System.out.println("Current Operating System: " + operatingSystem);
-        System.out.println("Current Architecture: " + systemArchitecture);
-        System.out.println("Current Browser Selection: " + selectedDriverType);
+        System.out.println("Operating System: " + operatingSystem);
+        System.out.println("Architecture: " + systemArchitecture);
+        System.out.println("Browser: " + selectedDriverType);
         System.out.println(" ");
 
         if (useRemoteWebDriver) {

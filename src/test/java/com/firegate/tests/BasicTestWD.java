@@ -17,7 +17,7 @@ public class BasicTestWD extends DriverFactory {
         driver.get("http://www.google.com");
     }
 
-    @Test
+    @Test(testName = "Google search", priority = 0, enabled = true)
     public void googleCheeseExample() throws Exception {
         WebElement searchField = driver.findElement(By.name("q"));
         searchField.clear();

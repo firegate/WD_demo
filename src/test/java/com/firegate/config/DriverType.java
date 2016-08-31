@@ -2,6 +2,7 @@ package com.firegate.config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -94,15 +95,12 @@ public enum DriverType implements DriverSetup {
     },
     EDGEDRIVER {
         public DesiredCapabilities getDesiredCapabilities() {
-            DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-            capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
-            capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, true);
-            capabilities.setCapability("requireWindowFocus", true);
+            DesiredCapabilities capabilities = DesiredCapabilities.edge();
             return capabilities;
         }
 
     public WebDriver getWebDriverObject(DesiredCapabilities capabilities) {
-        return new InternetExplorerDriver(capabilities);
+        return new EdgeDriver(capabilities);
     }
     };
 }
