@@ -43,7 +43,7 @@ public class AngularTestWD extends DriverFactory {
         projectName.sendKeys("DEMO");
         driver.findElement(ByAngular.model("project.desc")).sendKeys("DEMO field");
 
-        Thread.sleep(10000);
+        Thread.sleep(1000);
 
 
     }
