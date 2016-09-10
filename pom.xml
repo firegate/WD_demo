@@ -27,7 +27,7 @@
         <!-- Dependency versions -->
         <selenium.version>2.53.1</selenium.version>
         <!-- Configurable variables -->
-        <threads>3</threads>
+        <threads>1</threads>
         <browser>firefox</browser>
         <overwrite.binaries>false</overwrite.binaries>
         <remote>false</remote>
@@ -145,6 +145,29 @@
             <artifactId>poi</artifactId>
             <version>3.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.paulhammant</groupId>
+            <artifactId>ngwebdriver</artifactId>
+            <version>0.9.7</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
